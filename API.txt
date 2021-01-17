@@ -1,4 +1,0 @@
-Lists
-https://us7.api.mailchimp.com/3.0/lists/ce7f163d14
-API
-ae134276568baa8a1b1cd911d1139372-us7
