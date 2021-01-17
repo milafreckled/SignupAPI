@@ -25,11 +25,11 @@ app.post("/", (req, res)=>{
     ]
   };
   const jsonData = JSON.stringify(data);
-  const url = "https://us7.api.mailchimp.com/3.0/lists/ce7f163d14";
+  const url = "";
   const options = {
     method: "POST",
-    auth: "milafreckled:ae134276568baa8a1b1cd911d1139372-us7"
-  }
+    auth: YOUR_API,
+  };
   const request = https.request(url, options, function(response){
     if (response.statusCode === 200){
       res.sendFile(__dirname+"/success.html");
@@ -52,9 +52,3 @@ app.post("/failure", function(req, res){
 app.listen(process.env.PORT || 3000, ()=>{
 console.log("Server is running on 3000 port");
 });
-
-//API
-//ae134276568baa8a1b1cd911d1139372-us7
-
-//List // IDEA:
-//ce7f163d14
